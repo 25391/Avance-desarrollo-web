@@ -1,0 +1,190 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+
+/* Table of Content
+==================================================
+    #Reset & Basics
+    #Basic Styles
+    #Site Styles
+    #Typography
+    #Links
+    #Lists
+    #Images
+    #Buttons
+    #Forms
+    #Misc */
+
+
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== */
+/*เอาออกไปก่อน ยังไม่สามารถ overwrite ได้*/
+/*remove table, tbody, th, tr, td,*/
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tfoot, thead, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline; }
+    article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+        display: block; }
+/*  ol, ul {
+        list-style: none; } */
+    blockquote, q {
+        quotes: none; }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none; }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0; }
+
+
+/* #Typography
+================================================== */
+    h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+    h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+    h1 { font-size:46px; line-height: 50px; margin-bottom: 14px;}
+    h2 { font-size:35px; line-height: 40px; margin-bottom: 10px; }
+    h3 { font-size:28px; line-height: 34px; margin-bottom: 8px; }
+    h4 { font-size:21px; line-height: 30px; margin-bottom: 4px; }
+    h5 { font-size:17px; line-height: 24px; }
+    h6 { font-size:14px; line-height: 21px; }
+
+    p{
+        word-wrap:break-word;
+    }
+
+    i,
+    em,
+    dfn,
+    cite{
+        font-style:italic;
+    }
+    
+    tt,
+    var,
+    pre,
+    kbd,
+    samp,
+    code{
+        font-family:monospace, serif;
+        font-style:normal;
+    }
+    
+    b,
+    strong{
+        font-weight:700;
+    }
+    
+    pre{
+        -moz-box-sizing:border-box;
+        -moz-border-radius:2px;
+        -moz-box-shadow: 0 1px 0 #fff, inset 0 1px 1px rgba(0,0,0,0.2);
+        -webkit-border-radius:2px;
+        -webkit-box-shadow: 0 1px 0 #fff, inset 0 1px 1px rgba(0,0,0,0.2);
+        -webkit-box-sizing: border-box;
+        box-shadow: 0 1px 0 #fff, inset 0 1px 1px rgba(0,0,0,0.2);
+        box-sizing: border-box;
+        background: #f4f4f4;
+        border:1px solid #aaa;
+        border-bottom-color: #ccc;
+        border-radius:2px;
+        height:auto;
+        margin:0;
+        outline:none;
+        padding:6px 10px;
+        vertical-align:middle;
+        width:100%;
+        word-wrap:break-word;
+        white-space: pre-wrap;
+    }
+    
+    del{
+        text-decoration:line-through;
+    }
+    
+    ins,
+    dfn{
+        border-bottom:1px solid #ccc;
+    }
+    
+    sup,
+    sub,
+    small{
+        font-size:85%;
+    }
+    
+    abbr,
+    acronym{
+        font-size:85%;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+    }
+    
+    a abbr,
+    a acronym{
+        border:none;
+    }
+    
+    dfn[title],
+    abbr[title],
+    acronym[title]{
+        border-bottom: 1px solid #ccc;
+        cursor:help;
+    }
+    
+    sup{
+        vertical-align:super;
+    }
+    
+    sub{
+        vertical-align:sub;
+    }
+    
+    /* Blockquotes */
+    blockquote, blockquote p { font-size:17px; line-height: 24px; font-style: italic; }
+    blockquote { margin: 0 0 20px; padding: 9px 20px 0 19px; border-left:1px solid #ddd; }
+    blockquote cite { display:block; font-size:12px; }
+    blockquote cite:before { content: "\2014 \0022"; }
+    
+    hr{border: solid #ddd; border-width:1px 0 0; clear:both; margin:10px 0 30px; height:0; }
+    
+
+/* #Lists
+================================================== */
+    ul, ol { margin-bottom: 20px; margin-left: 30px;}
+   /*ul { list-style: none outside; }*/
+    ol { list-style: decimal; }
+    ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
+    ul.square { list-style: square outside; }
+    ul.circle { list-style: circle outside; }
+    ul.disc { list-style: disc outside; }
+    ul ul, ul ol,
+    ol ol, ol ul { margin: 4px 0 5px 30px; font-size: 90%;  }
+    ul ul li, ul ol li,
+    ol ol li, ol ul li { margin-bottom: 6px; }
+    li { line-height: 18px; margin-bottom: 12px; }
+    ul.large li { line-height: 21px; }
+    li p { line-height: 21px; }
+
+/* #Images
+================================================== */
+    
+img { max-width: auto; height: auto; border: auto;}
+figure { max-width: 100%;}              
+
+/* #Misc
+================================================== */
+    .remove-bottom { margin-bottom: 0 !important; }
+    .half-bottom { margin-bottom: 10px !important; }
+    .add-bottom { margin-bottom: 20px !important; }
+
